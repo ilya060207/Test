@@ -61,9 +61,9 @@ video.addEventListener("playing", () => {
       const emotion = Object.keys(expressions).filter(
         item => expressions[item] === maxValue
       );
-      document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
-      document.getElementById("gender").innerText = `Gender - ${gender}`;
-      document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`;
+      document.getElementById("age").innerText = `Age - ${interpolatedAge}`(canvas, resizedDetections);
+      document.getElementById("gender").innerText = `Gender - ${gender}`(canvas, resizedDetections);
+      document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`(canvas, resizedDetections);
     }
   }, 10);
 });
