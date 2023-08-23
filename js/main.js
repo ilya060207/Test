@@ -56,7 +56,7 @@ video.addEventListener("playing", () => {
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
-    faceapi.draw.drawAgeAndGender(canvas, resizedDetections);
+    faceapi.draw.drawageGender(canvas, resizedDetections);
 
 
     
