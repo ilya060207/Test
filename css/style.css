@@ -6,7 +6,9 @@ body {
   background: #2f2f2f;
   width: calc(100% - 33px);
 }
-
+.result-container {
+ z-index: 100;
+}
 canvas {
   position: absolute;
 }
