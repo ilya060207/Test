@@ -49,19 +49,17 @@ video.addEventListener("playing", () => {
     console.log(resizedDetections);
 
 
-    
-
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+   
+    faceapi.draw.drawDetections(canvas, resizedDetections);
+    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+
+    
     context.font = "40px Verdana"; 
     context.fillText( "Test text", 10, 30 );
 
 
-
-
     
-
-    faceapi.draw.drawDetections(canvas, resizedDetections);
-    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     if (resizedDetections && Object.keys(resizedDetections).length > 0) {
       const age = resizedDetections.age;
       const interpolatedAge = interpolateAgePredictions(age);
