@@ -55,8 +55,7 @@ video.addEventListener("playing", () => {
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
 
     
-    context.font = "40px Verdana"; 
-    context.fillText( "Test text", 10, 30 );
+    
 
 
     
