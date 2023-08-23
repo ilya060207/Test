@@ -50,8 +50,16 @@ video.addEventListener("playing", () => {
 
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
 
+
+
+
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+    faceapi.draw.drawAgeAndGender(canvas, resizedDetections);
+
+
+    
     if (resizedDetections && Object.keys(resizedDetections).length > 0) {
       const age = resizedDetections.age;
       const interpolatedAge = interpolateAgePredictions(age);
