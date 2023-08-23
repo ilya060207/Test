@@ -48,7 +48,17 @@ video.addEventListener("playing", () => {
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     console.log(resizedDetections);
 
+
+    
+
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+    context.font = "40px Verdana"; 
+    context.fillText( "Test text", 10, 30 );
+
+
+
+
+    
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
