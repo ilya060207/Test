@@ -52,7 +52,7 @@ video.addEventListener("playing", () => {
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-
+    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
     
     
 
@@ -76,17 +76,9 @@ video.addEventListener("playing", () => {
 
 
 
-let canvas = document.querySelector('canvas');
-  container.append('result-container');
 
 
 
-function addResultContainer() {
-  const canvas = document.querySelector('canvas');
-  const resultContainer = document.createElement('div');
-  resultContainer.classList.add('result-container');
-  canvas.parentNode.insertBefore(resultContainer, canvas.nextSibling);
-}
 
 
 function interpolateAgePredictions(age) {
