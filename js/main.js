@@ -57,7 +57,7 @@ video.addEventListener("playing", () => {
 
     
     const canvas = document.querySelector('canvas'); 
-    const resultContainer = document.querySelector('#result-container'); 
+    const resultContainer = document.querySelector(".result-container"); 
     // Получить позицию холста 
     const canvasRect = canvas.getBoundingClientRect(); // Обновить позицию resultContainer 
     resultContainer.style.top = `${canvasRect.top}px`; 
