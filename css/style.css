@@ -27,3 +27,6 @@ header {
   padding: 1rem;
   font-size: 2rem;
 }
+.tinyFaceDetector {
+  border: 2px solid grey;
+}
