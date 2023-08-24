@@ -52,6 +52,20 @@ video.addEventListener("playing", () => {
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+
+
+
+    
+    const canvas = document.querySelector('canvas'); 
+    const resultContainer = document.querySelector('#result-container'); 
+    // Получить позицию холста 
+    const canvasRect = canvas.getBoundingClientRect(); // Обновить позицию resultContainer 
+    resultContainer.style.top = `${canvasRect.top}px`; 
+    resultContainer.style.left = `${canvasRect.right - resultContainer.offsetWidth}px`;
+
+
+
+    
     if (resizedDetections && Object.keys(resizedDetections).length > 0) {
       const age = resizedDetections.age;
       const interpolatedAge = interpolateAgePredictions(age);
