@@ -12,7 +12,7 @@ body {
 }
 canvas {
   position: absolute;
-  opacity: 0;
+  border: 2px solid grey;
 }
 .container {
   display: flex;
