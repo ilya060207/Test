@@ -76,12 +76,12 @@ video.addEventListener("playing", () => {
   }, 10);
 });
 
-const canvas = document.querySelector('canvas'); 
-    const resultContainer = document.querySelector(".result-container"); 
-    // Получить позицию холста 
-    const canvasRect = canvas.getBoundingClientRect(); // Обновить позицию resultContainer 
-    resultContainer.style.top = `${canvasRect.top}px`; 
-    resultContainer.style.left = `${canvasRect.right - resultContainer.offsetWidth}px`;
+function addResultContainer() {
+  const canvas = document.querySelector('canvas');
+  const resultContainer = document.createElement('div');
+  resultContainer.classList.add('result-container');
+  canvas.parentNode.insertBefore(resultContainer, canvas.nextSibling);
+}
 
 
 function interpolateAgePredictions(age) {
