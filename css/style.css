@@ -7,11 +7,11 @@ body {
   width: calc(100% - 33px);
 }
 .result-container {
-  position: relative;
+  position: absolute;
  z-index: 100;
 }
 canvas {
-  position: absolute;
+  position: relative;
 }
 .container {
   display: flex;
