@@ -52,9 +52,6 @@ video.addEventListener("playing", () => {
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-faceapi.draw.drawFaceExpressions.innerText = `Age - ${interpolatedAge}`(canvas, resizedDetections);
-    faceapi.draw.drawAge(canvas, resizedDetections);
-faceapi.draw.drawGender(canvas, resizedDetections);
 
     
     
@@ -76,6 +73,13 @@ faceapi.draw.drawGender(canvas, resizedDetections);
     }
   }, 10);
 });
+
+
+
+let canvas = document.querySelector('canvas');
+  container.append('result-container');
+
+
 
 function addResultContainer() {
   const canvas = document.querySelector('canvas');
