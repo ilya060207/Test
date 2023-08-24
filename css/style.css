@@ -12,6 +12,7 @@ body {
 }
 canvas {
   position: absolute;
+  opacity: 0;
 }
 .container {
   display: flex;
