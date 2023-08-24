@@ -52,7 +52,7 @@ video.addEventListener("playing", () => {
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-    faceapi.draw.drawFaceExpressions.innerText = `Age - ${interpolatedAge}`(canvas, resizedDetections);
+    faceapi.draw.drawFaceExpressions Age - ${interpolatedAge} (canvas, resizedDetections);
     
     
 
