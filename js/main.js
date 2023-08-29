@@ -53,12 +53,7 @@ video.addEventListener("playing", () => {
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
 faceapi.draw.DrawBox(box, {
-        label:
-          
-          var div = document.createElement("div"); 
-          div.innerHTML = document.getElementById("result-container").value; document.body.appendChild(div);
-      
-  
+        label:  // вот сюда нужно добавить текст
   });
       drawBox.draw(canvas);
   
