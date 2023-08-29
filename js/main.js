@@ -76,10 +76,7 @@ video.addEventListener("playing", () => {
 
 
 
-const results = resizedDetections.map((d) => {
-      return faceMatcher.findBestMatch(d.descriptor);
-    });
-    results.forEach((result, i) => {
+
       const box = resizedDetections[i].detection.box;
       const drawBox = new faceapi.draw.DrawBox(box, {
         label.innerHTML = " new Text ";
