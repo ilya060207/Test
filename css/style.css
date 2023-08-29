@@ -7,7 +7,6 @@ body {
   width: calc(100% - 33px);
 }
 .result-container {
-  position: relative;
  z-index: 100;
 }
 canvas {
@@ -26,7 +25,4 @@ header {
   font-size: 2rem;
   padding: 1rem;
   font-size: 2rem;
-}
-.resizedDetections {
-  border: 2px solid grey;
 }
