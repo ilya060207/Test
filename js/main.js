@@ -52,10 +52,10 @@ video.addEventListener("playing", () => {
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-faceapi.draw.DrawBox(box, {
-        label: result,  // вот сюда нужно добавить текст (вместо result)
-  });
-      drawBox.draw(canvas);
+faceapi.draw.DrawBox(box, { 
+  label: "lol", // замени "твой текст" на желаемый текст 
+  }); 
+    drawBox.draw(canvas);
   
   
     
