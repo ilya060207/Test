@@ -76,15 +76,18 @@ video.addEventListener("playing", () => {
 
 
 
-results.forEach((result, i) => {
+const results = resizedDetections.map((d) => {
+      return faceMatcher.findBestMatch(d.descriptor);
+    });
+    results.forEach((result, i) => {
       const box = resizedDetections[i].detection.box;
       const drawBox = new faceapi.draw.DrawBox(box, {
-        label: result,
+        label.innerHTML = " new Text ";
       });
       drawBox.draw(canvas);
 
 
-
+        
 
 function interpolateAgePredictions(age) {
   predictedAges = [age].concat(predictedAges).slice(0, 30);
