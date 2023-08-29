@@ -52,10 +52,7 @@ video.addEventListener("playing", () => {
 
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-faceapi.draw.DrawBox(box, {
-        label.innerHTML = " new Text ";
-      });
-      drawBox.draw(canvas);
+
   
     
 
