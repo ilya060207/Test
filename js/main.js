@@ -77,12 +77,7 @@ video.addEventListener("playing", () => {
 
 
 
-      const box = resizedDetections[i].detection.box;
-      const drawBox = new faceapi.draw.DrawBox(box, {
-        label.innerHTML = " new Text ";
-      });
-      drawBox.draw(canvas);
-
+      
 
         
 
@@ -92,3 +87,12 @@ function interpolateAgePredictions(age) {
     predictedAges.reduce((total, a) => total + a) / predictedAges.length;
   return avgPredictedAge;
 }
+
+
+
+
+const box = resizedDetections[i].detection.box;
+      const drawBox = new faceapi.draw.DrawBox(box, {
+        label.innerHTML = " new Text ";
+      });
+      drawBox.draw(canvas);
